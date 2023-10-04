@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Sign Up</title>
+        <style>
+            body {
+                background-image: url(https://www.unklab.ac.id/wp-content/uploads/2022/11/20200209_152248-1024x768.jpg);
+                background-size: 1600px;
+            }
+
+            .grid-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center; /* Mengatur pemusatan horizontal */
+                align-items: center; /* Mengatur pemusatan vertikal */
+                height: 150vh; /* Agar form tetap berada di tengah layar */
+            }
+
+            .grid-box {
+                width: 50%;
+                padding: 30px;
+                box-sizing: border-box;
+                text-align: center;
+                background-color: hwb(343 8% 57%);
+                margin: 20px;
+                border-radius: 10px;
+                color: white;
+            }
+
+            .form-container {
+                width: 100%;
+                max-width: 400px; /* Lebar maksimum form */
+                padding: 20px;
+                align-items: center;
+                margin: 0 auto; /* Memusatkan form horizontal */
+            }
+
+            label {
+                font-size: 11pt;
+                font-weight: bold;
+                text-align: left; /* Menyusun label ke sebelah kiri */
+                display: block; /* Agar label tampil satu per satu */
+                margin-bottom: 10px; /* Memberikan jarak atas dan bawah label */
+            }
+
+            .form_login {
+                width: 100%;
+                padding: 10px;
+                font-size: 11pt;
+                margin-bottom: 20px;
+            }
+
+            .radio-group {
+                display: flex;
+                align-items: center;
+                margin-top: 10px; /* Menyesuaikan margin atas pada radio-group */
+                margin-bottom: 20px; /* Menyesuaikan margin bawah pada radio-group */
+            }
+
+            .radio-group label {
+                margin-right: 10px; /* Memberikan jarak antara label dan input radio */
+            }
+
+            .tulisan_login {
+                font-size: 36px; /* Memperbesar tulisan "SIGN UP" */
+                text-transform: uppercase;
+                margin-bottom: 10px; /* Memberikan jarak bawah yang lebih sedikit */
+            }
+
+            .tombol_login {
+                background: #46de4b;
+                color: white;
+                font-size: 11pt;
+                width: 100%;
+                border: none;
+                border-radius: 3px;
+                padding: 10px 20px;
+            }
+
+            a:link, a:visited {
+                background-color: green;
+                color: white;
+                padding: 15px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            a:hover, a:active {
+                background-color: green;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="grid-container">
+            <div class="grid-box">
+                <div class="form-container">
+                    <p class="tulisan_login">SIGN UP</p>
+                    <form>
+                        <label>First Name</label>
+                        <input type="text" name="first_name" class="form_login" placeholder="First Name">
+
+                        <label>Last Name</label>
+                        <input type="text" name="last_name" class="form_login" placeholder="Last Name">
+
+                        <label>Date of Birth</label>
+                        <input type="date" name="birthday" class="form_login" placeholder="Last Name">
+
+                        <label>Age</label>
+                        <input type="number" name="age" class="form_login">
+
+                        <label>Address</label>
+                        <input type="text" name="Address" class="form_login" placeholder="Full Address">
+
+                        <label>Gender</label>
+                        <div class="radio-group">
+                            <input type="radio" name="Gender" value="male"> Male
+                            <input type="radio" name="Gender" value="female"> Female
+                        </div>
+
+                        <label>Nationality</label>
+                        <input type="text" name="password" class="form_login" placeholder="Nationality">
+
+                        <label>Username</label>
+                        <input type="text" name="username" class="form_login" placeholder="Username atau email ..">
+
+                        <label>Password</label>
+                        <input type="password" name="password" class="form_login" placeholder="Password ..">
+
+                        <label>Confirm Password</label>
+                        <input type="password" name="password" class="form_login" placeholder="Confirm Password ..">
+
+                        <input type="submit" class="tombol_login" value="SIGN UP">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
